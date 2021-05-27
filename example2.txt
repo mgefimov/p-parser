@@ -1,0 +1,4 @@
+eval(St, conj(X,Y), U) :- eval(St, X, V), and(V, W, U).
+elem(zero, cons(H,T), H).
+neg(X, R).
+?- eval(St, conj(disj(X,Y),not(var(Z))), true).
